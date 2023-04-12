@@ -1,0 +1,16 @@
+{
+    "eleanorsoft_email_log": {
+        "column": {
+            "log_id": true,
+            "receiver": true,
+            "created_date": true,
+            "message": true
+        },
+        "index": {
+            "ELEANORSOFT_EMAIL_LOG_LOG_ID": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

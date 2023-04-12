@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+<!--        <add id="Eleanorsoft_MailLogger::customquote" title="Quote" module="Eleanorsoft_MailLogger" sortOrder="51" resource="Eleanorsoft_MailLogger::customquote" />-->
+        <add id="Eleanorsoft_MailLogger::logger" title="Email Logger" module="Eleanorsoft_MailLogger" sortOrder="51" resource="Eleanorsoft_MailLogger::logger" dependsOnConfig="dev/maillogger/enable_email_history_section"/>
+        <add id="Eleanorsoft_MailLogger::log" title="See Logs" module="Eleanorsoft_MailLogger" sortOrder="10" action="eleanorsoft_log/log" resource="Eleanorsoft_MailLogger::log" parent="Eleanorsoft_MailLogger::logger"/>
+    </menu>
+</config>

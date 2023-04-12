@@ -1,0 +1,16 @@
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="eleanorsoft_email_log">
+        <column xsi:type="int" name="log_id" padding="10" unsigned="true" nullable="false" identity="true" comment="Quote ID"/>
+        <column xsi:type="varchar" name="receiver" nullable="true" length="255" comment="Receiver"/>
+        <column xsi:type="timestamp" name="created_date"  comment="Date of creation" default="CURRENT_TIMESTAMP"/>
+        <column xsi:type="text" name="message" nullable="true" comment="Message"/>
+
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="log_id"/>
+        </constraint>
+
+        <index referenceId="LOG_ID" indexType="btree">
+            <column name="log_id"/>
+        </index>
+    </table>
+</schema>

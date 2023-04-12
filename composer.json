@@ -1,0 +1,22 @@
+{
+    "name": "eleanorsoft/mail-logger",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": "MIT",
+    "description": "EleanorSoft module allowing to catch all emails from site and store them to db",
+    "authors": [
+        {
+            "name": "EleanorSoft",
+            "email": "hello@eleanorsoft.com",
+            "homepage": "https://www.eleanorsoft.com"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Eleanorsoft\\Core\\": ""
+        }
+    }
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="dev">
+            <group id="maillogger" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Mail Logger</label>
+                <field id="is_enabled" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Module Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="disable_mail_communication" translate="label" type="select" sortOrder="3" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Disable Mail Communication</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="email_whitelist" translate="label" type="text" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Email whitelist</label>
+                    <comment><![CDATA[Email list separated by commas.]]></comment>
+                    <depends>
+                        <field id="*/*/disable_mail_communication">1</field>
+                    </depends>
+                    <validate>validate-no-empty</validate>
+                </field>
+                <field id="enable_email_history_section" translate="label" type="select" sortOrder="5" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Enable Email history section</label>
+                    <comment><![CDATA[Clear cache required.]]></comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
