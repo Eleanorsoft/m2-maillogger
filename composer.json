@@ -4,6 +4,9 @@
     "version": "1.0.0",
     "license": "MIT",
     "description": "EleanorSoft module allowing to catch all emails from site and store them to db",
+    "require": {
+        "php": ">=7.4"
+    },
     "authors": [
         {
             "name": "EleanorSoft",
