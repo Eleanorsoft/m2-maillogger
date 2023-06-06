@@ -11,4 +11,3 @@ php bin/magento setup:di:compile
 php bin/magento setup:static-content:deploy
 ```
 
-Article: https://www.eleanorsoft.com/magento2-mail-logger/
