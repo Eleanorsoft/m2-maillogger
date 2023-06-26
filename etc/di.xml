@@ -23,7 +23,7 @@
         </arguments>
     </virtualType>
 
-    <preference for="Eleanorsoft\MailLogger\Api\LogRepositoryInterface" type="Eleanorsoft\MailLogger\Model\LogRepository" />
+    <preference for="Eleanorsoft\MailLogger\Api\LogRepositoryInterface" type="Eleanorsoft\MailLogger\Model\LogRepositoryModel" />
     <preference for="Eleanorsoft\MailLogger\Api\Data\LogInterface" type="Eleanorsoft\MailLogger\Model\Log" />
 
 </config>

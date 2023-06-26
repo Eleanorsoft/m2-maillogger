@@ -3,9 +3,6 @@
 namespace Eleanorsoft\MailLogger\Api;
 
 use Eleanorsoft\MailLogger\Api\Data\LogInterface;
-use Magento\Framework\Exception\LocalizedException;
-use Magento\Framework\Exception\NoSuchEntityException;
-use Magento\Framework\Api\SearchCriteriaInterface;
 
 interface LogRepositoryInterface
 {

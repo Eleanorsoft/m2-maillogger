@@ -3,21 +3,16 @@
 namespace Eleanorsoft\MailLogger\Model;
 
 use Magento\Framework\App\Config\ScopeConfigInterface;
-use Magento\Framework\Exception\MailException;
 use Magento\Framework\Mail\MessageInterface;
-use Magento\Framework\Mail\TransportInterface;
-use Magento\Framework\Phrase;
-use Magento\Store\Model\ScopeInterface;
 use Zend\Mail\Message;
 use Zend\Mail\Transport\Sendmail;
 
 /**
  * Class Transport
- * todo: What is its purpose? What does it do?
  *
- * @package Eleanorsoft_FDA
- * @author Konstantin Esin <hello@eleanorsoft.com>
- * @copyright Copyright (c) 2018 Eleanorsoft (https://www.eleanorsoft.com/)
+ * @package Eleanorsoft_MailLogger
+ * @author <hello@eleanorsoft.com>
+ * @copyright Copyright (c) 2023 Eleanorsoft (https://www.eleanorsoft.com/)
  */
 
 class Transport extends \Magento\Email\Model\Transport

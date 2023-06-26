@@ -3,7 +3,6 @@
 namespace Eleanorsoft\MailLogger\Model;
 
 use Eleanorsoft\MailLogger\Model\ResourceModel\Log\CollectionFactory;
-use Magento\Framework\App\Request\DataPersistorInterface;
 
 class DataProvider extends \Magento\Ui\DataProvider\AbstractDataProvider
 {

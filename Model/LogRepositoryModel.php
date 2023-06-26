@@ -5,11 +5,9 @@ namespace Eleanorsoft\MailLogger\Model;
 use Eleanorsoft\MailLogger\Api\Data\LogInterface;
 
 use Eleanorsoft\MailLogger\Api\Data\LogInterfaceFactory;
-use Eleanorsoft\MailLogger\Api\LogRepositoryInterface;
 use Eleanorsoft\MailLogger\Model\ResourceModel\Log as ResourceLog;
 use Eleanorsoft\MailLogger\Model\ResourceModel\Log\CollectionFactory as LogCollectionFactory;
 use Magento\Framework\Api\SearchCriteria\CollectionProcessorInterface;
-use Magento\Framework\Api\SearchCriteriaInterface;
 use Magento\Framework\Exception\CouldNotDeleteException;
 use Magento\Framework\Exception\CouldNotSaveException;
 use Magento\Framework\Exception\LocalizedException;
