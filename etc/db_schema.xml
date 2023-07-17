@@ -12,5 +12,10 @@
         <index referenceId="LOG_ID" indexType="btree">
             <column name="log_id"/>
         </index>
+
+        <index referenceId="FULLTEXT_CUSTOM_SEARCH" indexType="fulltext">
+            <column name="receiver"/>
+            <column name="message"/>
+        </index>
     </table>
 </schema>

@@ -120,7 +120,7 @@ class Transport extends \Magento\Email\Model\Transport
 
     protected function emailWhiteList()
     {
-        $whiteList = explode(',', $this->scopeConfig->getValue("dev/maillogger/email_whitelist"));
+        $whiteList = explode(',', $this->scopeConfig->getValue("dev/maillogger/email_whitelist") ?: '');
         return $whiteList;
     }
 }

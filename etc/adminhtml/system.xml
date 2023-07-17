@@ -18,7 +18,6 @@
                     <depends>
                         <field id="*/*/disable_mail_communication">1</field>
                     </depends>
-                    <validate>validate-no-empty</validate>
                 </field>
                 <field id="enable_email_history_section" translate="label" type="select" sortOrder="5" showInDefault="1" showInWebsite="0" showInStore="0">
                     <label>Enable Email history section</label>
