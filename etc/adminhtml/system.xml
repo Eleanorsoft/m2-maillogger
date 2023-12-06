@@ -24,6 +24,10 @@
                     <comment><![CDATA[Clear cache required.]]></comment>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                 </field>
+                <field id="email_clean_period" translate="label" type="text" sortOrder="6" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Email Clean Up Period</label>
+                    <comment><![CDATA[Period in days.]]></comment>
+                </field>
             </group>
         </section>
     </system>
