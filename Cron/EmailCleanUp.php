@@ -36,6 +36,11 @@ class EmailCleanUp
      * @return void
      */
     public function execute() {
+        if(!$this->isCleanUpEnabled()){
+            $this->logger->info('CleanUp Disabled by admin');
+            return;
+        }
+
         $this->logger->info('Cron Works');
 
         $startDate = new \DateTime();
@@ -53,8 +58,19 @@ class EmailCleanUp
         }
     }
 
+    /**
+     * @return int|mixed
+     */
     protected function cleanUpPeriod()
     {
         return $this->scopeConfig->getValue("dev/maillogger/email_clean_period") ?? 90;
+    }
+
+    /**
+     * @return bool
+     */
+    protected function isCleanUpEnabled(): bool
+    {
+        return $this->scopeConfig->getValue("dev/maillogger/enable_email_cleanup");
     }
 }

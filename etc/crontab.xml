@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
     <group id="default">
-        <job name="email_clean_up" instance="\Eleanorsoft\MailLogger\Cron\EmailCleanUp" method="execute">
+        <job name="email_clean_up" instance="Eleanorsoft\MailLogger\Cron\EmailCleanUp" method="execute">
             <schedule>0 0 * * *</schedule>
         </job>
     </group>

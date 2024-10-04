@@ -24,9 +24,17 @@
                     <comment><![CDATA[Clear cache required.]]></comment>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                 </field>
-                <field id="email_clean_period" translate="label" type="text" sortOrder="6" showInDefault="1" showInWebsite="0" showInStore="0">
-                    <label>Email Clean Up Period</label>
-                    <comment><![CDATA[Period in days.]]></comment>
+                <field id="enable_email_cleanup" translate="label" type="select" sortOrder="6" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Enable Email CleanUp</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="email_clean_period" translate="label" type="text" sortOrder="7" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Email CleanUp Period</label>
+                    <comment><![CDATA[Period in days (positive number). If not set, default is 90 days.]]></comment>
+                    <depends>
+                        <field id="*/*/enable_email_cleanup">1</field>
+                    </depends>
+                    <validate>validate-digits validate-not-negative-number</validate>
                 </field>
             </group>
         </section>
