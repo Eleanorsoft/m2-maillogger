@@ -5,6 +5,9 @@ namespace Eleanorsoft\MailLogger\Cron;
 use Magento\Framework\App\Config\ScopeConfigInterface;
 use Psr\Log\LoggerInterface;
 
+/**
+ *
+ */
 class EmailCleanUp
 {
     protected $logger;
@@ -14,8 +17,14 @@ class EmailCleanUp
      */
     protected $collectionFactory;
 
+    /**
+     * @var ScopeConfigInterface
+     */
     protected $scopeConfig;
 
+    /**
+     * @var \Eleanorsoft\MailLogger\Model\LogRepositoryModel
+     */
     protected $logRepository;
 
     public function __construct(
