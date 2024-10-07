@@ -6,6 +6,9 @@ use Eleanorsoft\MailLogger\Api\Data\LogInterface;
 use Magento\Framework\DataObject\IdentityInterface;
 use Magento\Framework\Model\AbstractExtensibleModel;
 
+/**
+ *
+ */
 class Log extends AbstractExtensibleModel  implements IdentityInterface, LogInterface
 {
     const CACHE_TAG = 'eleanorsoft_email_log';
